@@ -1,0 +1,67 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+    width: 450px;
+    height: 350px;
+}
+.flip-container
+{
+    width: 50%;
+}
+
+/* flip speed */
+
+.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.login_btn, .signup_btn{
+    width: 45%;
+    float: right;
+}
+.signup, .goback{
+    width: 45%;
+}
+h2{
+    color: aliceblue;
+    text-align: center;
+}
+/* hide back of pane during swap */
+
+.front,
+.back {
+    padding-top: 25%;
+    padding-left: 10%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.alert {
+    width:40%;    
+ }
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+    
+}
+

@@ -1,0 +1,83 @@
+.mybg{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.myvertibg{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 5%;
+}
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  .logoff{
+    width: 60%;
+    padding: 10px 0px 8px 0px;
+  }
+
+  .logoffbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 3% !important;
+    padding: 0 !important;
+    height: 6% !important;
+    border-radius: 50% !important;
+    margin-left: 5% !important;
+  }
+  .bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+  }
+  .name_style{
+    color: white;
+    font-family: emoji;
+    font-size: x-large;
+  }
+  .center_modal
+{
+    position: absolute !important;
+  left: 50% !important;
+  top: 45% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100% !important;
+}
+.bg-grey{
+  background-color: #e9ecef;
+}
+.notask{
+  font-size: smaller;
+  font-family: monospace;
+}
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
