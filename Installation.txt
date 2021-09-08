@@ -1,0 +1,4 @@
+step 1: download 
+step 2: import database
+step 3: http://localhost/todo/Home
+ 
